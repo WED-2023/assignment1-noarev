@@ -1,7 +1,202 @@
-#menu
-{
-	position: fixed;
-	width: 100%;
-	height: 35px;
-	background: white;
+/* טעינת הפונט Open Sans */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+
+/* הגדרות כלליות לגוף הדף */
+body {
+  font-family: 'Open Sans', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f9f9f9; /* רקע בהיר */
 }
+
+/* עיצוב התפריט העליון */
+#menu {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 50px;
+  background-color: #00bfff; /* צבע רקע תכול */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* צל עדין */
+  z-index: 9999;
+}
+
+
+
+
+/* רשימת הקישורים בתפריט */
+#menu ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center; /* למרכז את הקישורים אופקית */
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+/* כל פריט בתפריט */
+#menu ul li {
+  margin: 0 10px; /* מרווח אופקי בין הפריטים */
+}
+
+/* הוספת קו אנכי בין הפריטים, חוץ מהפריט הראשון */
+#menu ul li + li::before {
+  content: "|";
+  color: #fff;
+  margin-right: 10px;
+}
+
+/* עיצוב הקישורים עצמם */
+#menu ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+  padding: 5px 8px;
+  transition: background-color 0.3s;
+}
+
+/* אפקט ריחוף (hover) */
+#menu ul li a:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 4px;
+}
+
+/* עיצוב הסקשנים (למשל About Me וכו') */
+.section {
+  padding: 100px 20px 40px; /* 100px מלמעלה כדי שלא יסתיר את הטקסט מתחת לתפריט */
+  max-width: 800px;
+  margin: 0 auto 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+/* כותרות ראשיות בסקשן */
+.section h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+  color: #333;
+  text-align: center;
+}
+
+/* כותרות משניות */
+.section h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+  color: #333;
+  text-align: right; /* כותרת משנית לימין */
+}
+
+/* פסקאות */
+.section p {
+  text-align: right;
+  direction: rtl; /* לטקסט בעברית */
+}
+
+.title-line {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: #333;
+	margin: 20px 0;
+  }
+  
+  .title-line span {
+	margin: 0 10px; /* רווח קטן משני הצדדים של הטקסט */
+  }
+  
+  .title-line::before,
+  .title-line::after {
+	content: "";
+	flex: 1;                 /* ממלאים את הרוחב הנותר */
+	height: 2px;             /* עובי הקו */
+	background-color: #00bfff;
+  }
+  
+
+  .photos-container {  /*עיצוב התמונות */
+	display: flex; 
+	flex-wrap: wrap;
+	gap: 20px;
+	justify-content: center;
+	margin-top: 30px;
+  }
+
+
+  .photo-card {
+	width: 220px;
+	background-color: #fff;
+	border-radius: 10px;
+	overflow: hidden;
+	box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+	text-align: center;
+  }
+
+
+  .photo-card img {
+	width: 100%;
+	height: 200px; /* קובע גובה אחיד לתמונה */
+	object-fit: cover; /* חותך את התמונה כך שתמלא את הכרטיס בלי לעוות */
+	border-radius: 8px 8px 0 0; /* עיגול פינות עליונות */
+	display: block;
+  }
+
+  
+  .photo-card p {
+	min-height: 40px; /* שיהיה גובה אחיד לכיתובים */
+	margin: 10px;
+	font-size: 14px;
+	direction: rtl;
+	color: #333;
+  }
+
+
+  .video-center {
+	display: flex;
+	justify-content: center; /* ממרכז אופקית */
+	align-items: center;     /* ממרכז אנכית אם יש צורך */
+	margin-top: 20px;
+  }
+  
+  #menu {
+	display: flex;
+	align-items: center;
+	justify-content: flex-start; /* לוגו מצד אחד, תפריט מהצד השני */
+	padding: 0 20px;
+  }
+  
+  .logo img {
+	height: 40px;
+	width: 40px;
+	border-radius: 50%;
+	object-fit: contain;
+	border: 2px solid white;
+	box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+  }
+  
+  .logo {
+	margin-left: 10px; /* פחות מרווח */
+  }
+
+  .qr-container {
+	text-align: center;
+	margin-top: 20px;
+  }
+  
+  .qr-container p {
+	font-size: 18px;
+	margin-bottom: 10px;
+	color: #333;
+  }
+  
+  .qr-img {
+	width: 200px;
+	height: 200px;
+	border: 2px solid #00bfff; /* מסגרת תכולה */
+	border-radius: 12px;        /* עיגול פינות */
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* צל עדין */
+  }
+  
+  
+
+  
