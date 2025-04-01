@@ -90,9 +90,11 @@ body {
 
 /* פסקאות */
 .section p {
-  text-align: right;
-  direction: rtl; /* לטקסט בעברית */
-}
+	text-align: center;
+	font-size: 18px;
+	margin-bottom: 10px;
+  }
+  
 
 .title-line {
 	display: flex;
@@ -197,6 +199,21 @@ body {
 	border: none;
   }
 
+  .like-text {
+	text-align: center;
+	font-size: 18px;
+	margin-bottom: 15px;
+	color: #333;
+  }
+  
+  .like-wrapper {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+  }
+  
+  
+
   @media (max-width: 1000px) {
 	.videos-grid {
 	  grid-template-columns: repeat(2, 1fr); /* שתי עמודות במסכים בינוניים */
@@ -248,6 +265,10 @@ body {
 	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* צל עדין */
   }
   
+  .photo-card {
+	background-color: #fdfdfd;
+  }
+  
 
   body {
 	background: linear-gradient(to bottom, #f5f7fa, #e4ecf4);
@@ -256,6 +277,55 @@ body {
 	padding: 0;
   }
   
+  table {
+	border: 1px solid #ccc;
+	border-collapse: collapse;
+	margin-top: 20px;
+  }
+  
+  table th, table td {
+	border: 1px solid #ccc;
+	padding: 10px;
+	text-align: center;
+	font-size: 14px;
+  }
+  
+
+
+  #spa ul {
+	background-color: #f7fdfc; /* רקע עדין */
+	border: 1px solid #69d4b0; /* גבול בצבע האתר */
+	border-radius: 12px;
+	padding: 20px 25px;
+	margin-top: 20px;
+	list-style: none;
+  }
+  
+  #spa ul li {
+	margin-bottom: 20px;
+	padding: 15px;
+	background-color: #ffffff;
+	border-radius: 8px;
+	box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+	transition: transform 0.3s ease;
+  }
+  
+  #spa ul li:hover {
+	transform: scale(1.02);
+	background-color: #f0fbf8;
+  }
+  
+  #spa ul li strong {
+	color: #008c6e;
+	font-size: 16px;
+  }
+  
+  #spa ul li em {
+	display: block;
+	margin-top: 5px;
+	color: #666;
+	font-size: 14px;
+  }
   
 
   
