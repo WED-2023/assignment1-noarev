@@ -289,15 +289,18 @@ body {
   }
 
   .qr-container {
-	text-align: center;
-	margin-top: 20px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-top: -10px; /* כמו שהיה ב-inline */
   }
   
-  .qr-container p {
-	font-size: 18px;
-	margin-bottom: 10px;
-	color: #333;
+  .qr-text {
+	font-size: 16px;
+	margin-bottom: 20px;
+	text-align: center;
   }
+  
   
   .qr-img {
 	width: 200px;
@@ -376,6 +379,83 @@ body {
 	margin-bottom: 20px;
 	font-size: 18px;
   }
+
+/* כותרת לשאלות */
+.question-title {
+	text-align: right;
+	font-weight: bold;
+	margin: 30px 0 15px;
+	font-size: 18px;
+  }
+  
+  /* תיאור תרחיש השימוש */
+  .question-desc {
+	text-align: right;
+	font-size: 16px;
+	margin-bottom: 15px;
+	direction: rtl;
+  }
+  
+  /* טבלת השוואה Web1/2/3 */
+  .web-table {
+	width: 100%;
+	border-collapse: collapse;
+	text-align: center;
+	border: 1px solid #ccc;
+  }
+  
+  .web-table th,
+  .web-table td {
+	border: 1px solid #ccc;
+	padding: 10px;
+	font-size: 14px;
+  }
+  
+  .web-table thead {
+	background-color: #f0f0f0;
+  }
+  
+  /* רשימת ההשוואה בתרחיש */
+  .comparison-list {
+	background-color: #f7fdfc;
+	border: 1px solid #69d4b0;
+	border-radius: 12px;
+	padding: 20px 25px;
+	margin-top: 20px;
+	list-style: none;
+	direction: rtl;
+  }
+  
+  .comparison-list li {
+	text-align: right;
+	direction: rtl;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end; /* מוודא שכל התוכן מיושר לימין */
+  }
+  
+
+  .comparison-list li * {
+	text-align: right;
+	direction: rtl;
+  }
+  
+  .comparison-list li:hover {
+	transform: scale(1.02);
+	background-color: #f0fbf8;
+  }
+  
+  .comparison-list li strong {
+	color: #008c6e;
+	font-size: 16px;
+	display: inline-block;
+	width: 100%;
+	text-align: right;
+	direction: rtl;
+	margin-bottom: 5px;
+}
+
+  
   
   /* טופס יצירת קשר */
   .contact-form {
@@ -413,6 +493,20 @@ body {
   .contact-form button:hover {
 	background-color: #58c0a0;
   }
+  
+  .contact-form label {
+	display: block;
+	margin-bottom: 5px;
+	font-weight: bold;
+	text-align: right;
+  }
+
+  .contact-form input,
+.contact-form textarea,
+.contact-form select {
+  background-color: #f9f9f9;
+}
+
   
   
 
