@@ -368,6 +368,52 @@ body {
 	color: #666;
 	font-size: 14px;
   }
+
+
+  /* כותרת פסקה */
+.contact-instruction {
+	text-align: right;
+	margin-bottom: 20px;
+	font-size: 18px;
+  }
+  
+  /* טופס יצירת קשר */
+  .contact-form {
+	max-width: 500px;
+	margin: 0 auto;
+	direction: rtl;
+	text-align: right;
+  }
+  
+  /* שדות קלט וטקסט */
+  .contact-form input[type="email"],
+  .contact-form textarea,
+  .contact-form select {
+	width: 100%;
+	padding: 8px;
+	margin-bottom: 15px;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	font-family: inherit;
+	font-size: 16px;
+  }
+  
+  /* כפתור שליחה */
+  .contact-form button {
+	background-color: #69d4b0;
+	color: white;
+	border: none;
+	padding: 10px 20px;
+	font-size: 16px;
+	border-radius: 8px;
+	cursor: pointer;
+	transition: background-color 0.3s ease;
+  }
+  
+  .contact-form button:hover {
+	background-color: #58c0a0;
+  }
+  
   
 
   

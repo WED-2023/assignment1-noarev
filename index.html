@@ -151,7 +151,7 @@
 <section id="like" class="section">
   <h2 class="title-line"><span>Like</span></h2>
 
-  <p class="like-text">אם אהבת את העמוד של גידי גוב, יכול/ה ללחוץ לייק 👇</p>
+  <p class="like-text">👇אם אהבת את העמוד של גידי גוב, יכול/ה ללחוץ לייק</p>
 
   <div class="like-wrapper">
     <div class="fb-like"
@@ -261,32 +261,18 @@
 
   <section id="contact" class="section">
     <h2 class="title-line"><span>Contact Me</span></h2>
-    <p style="text-align: right;">!מלאו טופס זה ליצירת קשר</p>
+    <p class="contact-instruction">!מלאו טופס זה ליצירת קשר</p>
   
-    <form class="contact-form"
-          action="mailto:noarev@post.bgu.ac.il"
-          method="POST"
-          enctype="text/plain"
-          style="max-width: 500px; margin: 0 auto; direction: rtl; text-align: right;">
+    <form class="contact-form" action="mailto:noarev@post.bgu.ac.il" method="GET">
       
       <label for="email">כתובת המייל שלך:</label><br>
-      <input type="email"
-             id="email"
-             name="כתובת המייל שלי"
-             required
-             style="width: 100%; padding: 8px; margin-bottom: 15px;">
-      
+      <input type="email" id="email" name="email" required>
+  
       <label for="message">הודעה:</label><br>
-      <textarea id="message"
-                name="הודעה"
-                rows="5"
-                required
-                style="width: 100%; padding: 8px; margin-bottom: 15px;"></textarea>
+      <textarea id="message" name="message" rows="5" required></textarea>
   
       <label for="emoji">בחר/י חייכן:</label><br>
-      <select id="emoji"
-              name="חייכן"
-              style="width: 100%; padding: 8px; margin-bottom: 20px;">
+      <select id="emoji" name="emoji">
         <option value="🙂">🙂 רגיל</option>
         <option value="😀">😀 שמח</option>
         <option value="😢">😢 עצוב</option>
@@ -294,13 +280,10 @@
         <option value="🤔">🤔 חושב</option>
       </select>
   
-      <button type="submit"
-              style="background-color: #69d4b0; color: white; border: none; padding: 10px 20px; font-size: 16px; border-radius: 8px; cursor: pointer;">
-        שלח
-      </button>
+      <button type="submit">שלח</button>
     </form>
   </section>
-    
+      
 
 
 
