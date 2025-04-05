@@ -17,7 +17,7 @@ body {
 	top: 0;                        /* ממקם בראש המסך */
 	width: 100%;                   /* פריסה לרוחב */
 	z-index: 1000;                 /* שיהיה מעל התפריט */
-	background-color: #69d4b0;     /* ירקרק נעים */
+	background-color: #69d4b0;     /*רקע ירוק*/
 	color: white;
 	text-align: center;
 	padding: 12px 0;
@@ -39,8 +39,6 @@ body {
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* צל עדין */
   z-index: 9999;
 }
-
-
 
 
 /* רשימת הקישורים בתפריט */
@@ -66,7 +64,7 @@ body {
   margin-right: 10px;
 }
 
-/* עיצוב הקישורים עצמם */
+/*  עיצוב הקישורים עצמם והוספת אפקט ריחוף*/
 #menu ul li a {
   text-decoration: none;
   color: #fff;
@@ -82,7 +80,7 @@ body {
 	transition: 0.3s ease;
   }
 
-/* עיצוב הסקשנים (למשל About Me וכו') */
+/* עיצוב הסקשנים */
 .section {
   padding: 100px 20px 40px; /* 100px מלמעלה כדי שלא יסתיר את הטקסט מתחת לתפריט */
   max-width: 800px;
@@ -126,6 +124,8 @@ body {
 	padding: 0 20px; /* קצת ריווח מהקצוות במסך קטן */
   }
   
+  /*  תמונת שער עליונה (Hero) */
+
   .cover-image {
 	width: 100%;
 	height: 300px;
@@ -136,7 +136,7 @@ body {
   }
   
   
-
+/* כותרת עם קווים בצדדים */
 
 .title-line {
 	display: flex;
@@ -146,6 +146,8 @@ body {
 	margin: 20px 0;
   }
   
+
+
   .title-line span {
 	margin: 0 10px; /* רווח קטן משני הצדדים של הטקסט */
   }
@@ -158,6 +160,7 @@ body {
 	background-color: #69d4b0; /* צבע הקו */
   }
   
+/* === גלריית תמונות - קונטיינר כללי === */
 
   .photos-container {  /*עיצוב התמונות */
 	display: flex; 
@@ -167,6 +170,7 @@ body {
 	margin-top: 30px;
   }
 
+/* === כרטיס תמונה בודד בגלריה === */
 
   .photo-card {
 	width: 220px;
@@ -177,6 +181,7 @@ body {
 	text-align: center;
   }
 
+/* === עיצוב תמונה בתוך כרטיס תמונה === */
 
   .photo-card img {
 	width: 100%;
@@ -192,7 +197,8 @@ body {
 	transform: scale(1.05); /* מגדיל את התמונה */
   }
 
-  
+  /* === טקסט מתחת לכל תמונה בגלריה === */
+
   .photo-card p {
 	min-height: 40px; /* שיהיה גובה אחיד לכיתובים */
 	margin: 10px;
@@ -201,6 +207,7 @@ body {
 	color: #333;
   }
 
+/* === סידור סרטונים במרכז המסך === */
 
   .video-center {
 	display: flex;
@@ -209,6 +216,7 @@ body {
 	margin-top: 20px;
   }
 
+/* === רשת של שלושה סרטונים בשורה אחת === */
 
   .videos-grid {
 	display: grid;
@@ -218,6 +226,8 @@ body {
 	margin: 30px auto;
 	max-width: 1200px; /* לא לעבור את זה */
   }
+
+  /* === כרטיס של וידאו === */
 
   .video-wrapper {
 	width: 100%;
@@ -233,6 +243,8 @@ body {
 	box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
   }
 
+  /* === עיצוב iframe של YouTube === */
+
   .video-wrapper iframe {
 	width: 100%;
 	height: auto;
@@ -240,6 +252,7 @@ body {
 	display: block;
 	border: none;
   }
+
 
   .like-text {
 	text-align: center;
@@ -254,7 +267,8 @@ body {
 	align-items: center;
   }
   
-  
+  /* === תצוגה מותאמת לסמארטפונים וטאבלטים === */
+
 
   @media (max-width: 1000px) {
 	.videos-grid {
@@ -268,6 +282,9 @@ body {
 	}
   }
   
+
+  /* === עיצוב של הלוגו בראש האתר === */
+
   #menu {
 	display: flex;
 	align-items: center;
@@ -288,11 +305,13 @@ body {
 	margin-left: 10px; /* פחות מרווח */
   }
 
+  /* === עיצוב תצוגת QR קוד === */
+
   .qr-container {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	margin-top: -10px; /* כמו שהיה ב-inline */
+	margin-top: -10px; 
   }
   
   .qr-text {
@@ -314,6 +333,7 @@ body {
 	background-color: #fdfdfd;
   }
   
+/* === רקע כללי לכל הדף === */
 
   body {
 	background: linear-gradient(to bottom, #f5f7fa, #e4ecf4);
@@ -322,6 +342,9 @@ body {
 	padding: 0;
   }
   
+
+  /* === עיצוב טבלה  === */
+
   table {
 	border: 1px solid #ccc;
 	border-collapse: collapse;
@@ -336,6 +359,7 @@ body {
   }
   
 
+/* === עיצוב של שאלות ותשובות ב-Q&A === */
 
   #spa ul {
 	background-color: #f7fdfc; /* רקע עדין */
