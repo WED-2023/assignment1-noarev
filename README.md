@@ -5,4 +5,4 @@ ID: 314940453
 Link to the website: https://wed-2023.github.io/314940453/
 
 I chose to build my website about Gidi Gov — one of the most respected and leading musicians in the Israeli music industry.  
-The site presents various aspects of his career and personality, including photos, videos, playlists, some features, and a contact form.
+The site presents various aspects of his career and personality, including photos, playlists, some features, and a contact form.
